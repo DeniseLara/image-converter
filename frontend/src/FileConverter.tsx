@@ -1,7 +1,7 @@
 import './FileConverter.css';
 import { useState, useCallback } from 'react';
 import { useFileConverter } from './hooks/useFileConverter';
-import { OutputImageFormat } from './types/conversion.type';
+import type { OutputImageFormat } from './types/conversion.type';
 import { Zap, Shield, RefreshCw, FileImage, ShieldCheck } from 'lucide-react';
 
 import Dropzone from './components/Dropzone';

@@ -1,5 +1,5 @@
 import './ConversionOptions.css'
-import { OutputImageFormat } from "../types/conversion.type";
+import type { OutputImageFormat } from "../types/conversion.type";
 import { Wand2 } from "lucide-react";
 
 interface ConversionOptionsProps {
