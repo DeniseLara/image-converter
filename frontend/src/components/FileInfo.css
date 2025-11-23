@@ -1,0 +1,66 @@
+.file-info {
+  background: var(--bg-hover);
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  position: relative;
+  overflow: hidden;
+  padding: 1.25rem;
+  margin-top: 1.5rem;
+  animation: slideIn 0.3s ease;
+}
+
+.file-info::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(99, 102, 241, 0.1), transparent);
+}
+
+.file-info-name {
+  color: var(--text-primary);
+  font-weight: 600;
+  font-size: var(--fs-base);
+  margin-bottom: 0.5rem;
+  padding-right: 2.5rem;
+  word-break: break-word;
+}
+
+.file-info-size {
+  color: var(--text-muted);
+  font-size: var(--fs-sm);
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.remove-button {
+  position: absolute;
+  right: 1.5rem;
+  border: none;
+  outline: none;
+  background: transparent;
+  cursor: pointer;
+  border-radius: 4rem;
+  background: rgba(239, 68, 68, 0.1);
+  border: 1px solid var(--error);
+  color: var(--error);
+  padding: 0.4rem 0.5rem;
+  transition: all .25s ease;
+}
+
+.remove-button:hover {
+  background: var(--error);
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(239, 68, 68, 0.2);
+}
