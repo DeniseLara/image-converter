@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { ConversionOptions, OutputImageFormat } from '../types/conversion.type';
+import type { ConversionOptions, OutputImageFormat } from '../types/conversion.type';
 
 const MAX_FILE_SIZE_BYTES = 5 * 1024 * 1024;
 
