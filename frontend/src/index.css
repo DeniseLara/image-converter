@@ -73,7 +73,7 @@ button {
   font-family: var(--font-secondary);
 }
 
-body::before {
+/*body::before {
   content: '';
   position: fixed;
   inset: 0;
@@ -83,7 +83,7 @@ body::before {
     radial-gradient(circle at 40% 20%, rgba(139, 92, 246, 0.1) 0%, transparent 50%);
   pointer-events: none;
   z-index: -1;
-}
+}*/
 
 ::-webkit-scrollbar {
   width: 10px;
